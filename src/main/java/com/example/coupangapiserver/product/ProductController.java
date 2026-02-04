@@ -29,6 +29,12 @@ public class ProductController {
         return ResponseEntity.ok(products);
     }
 
+    @GetMapping("/suggestions")
+    public ResponseEntity<List<String>> getSuggestions(@RequestParam String query) {
+        List<String> suggestions = productService.getSuggestions(query);
+        return ResponseEntity.ok(suggestions);
+    }
+
 
     @PostMapping()
     public ResponseEntity<Product> createProduct(@RequestBody CreateProductRequestDto createProductRequestDto) {
