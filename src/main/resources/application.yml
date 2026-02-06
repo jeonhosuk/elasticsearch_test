@@ -10,7 +10,9 @@ spring:
     show-sql: true
 
   elasticsearch:
-    uris: http://localhost:9200
+    uris: https://daa50bdba08f4ed4af44af870161ab55.ap-northeast-2.aws.elastic-cloud.com:443
+    username: elastic
+    password: 93NtiS5vQUQlN34Lg7K5ZZjG
 
 logging:
   level:
